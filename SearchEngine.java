@@ -14,7 +14,7 @@ class Handler implements URLHandler {
             String[] parts = url.getQuery().split("=");
             storage.add(parts[1]);
             counter++;
-            return String.format("String added!"+" Counter: "Integer.toString(counter));
+            return String.format("String added!"+" Counter: "+Integer.toString(counter));
         } else {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/search")) {
